@@ -1,0 +1,60 @@
+/* Color Theme Swatches in Hex */
+.Polish-Sausage-Blues-1-hex { color: #212F80; }
+.Polish-Sausage-Blues-2-hex { color: #101840; }
+.Polish-Sausage-Blues-3-hex { color: #354CCC; }
+.Polish-Sausage-Blues-4-hex { color: #24348C; }
+.Polish-Sausage-Blues-5-hex { color: #1A2666; }
+
+/* Color Theme Swatches in Hex */
+.Dark-grunge-textured-red-concrete-wall-background-1-hex { color: #BF0413; }
+.Dark-grunge-textured-red-concrete-wall-background-2-hex { color: #8C030E; }
+.Dark-grunge-textured-red-concrete-wall-background-3-hex { color: #400106; }
+.Dark-grunge-textured-red-concrete-wall-background-4-hex { color: #590202; }
+.Dark-grunge-textured-red-concrete-wall-background-5-hex { color: #260101; }
+
+* {background-color: black; box-sizing: border-box; font-family: 'Montserrat', sans-serif !important;}
+
+img {max-width:100%; height: auto;}
+
+h1 {font-size: 128px !important; text-align: center; font-weight: 800 !important;}
+
+h2 {font-size: 55px !important; text-align: right; font-weight: 600 !important;}
+
+#introduction {
+    background-image: linear-gradient(90deg, #BF0413, #1A2666);
+    background-clip: text; 
+    -webkit-background-clip: text;
+    color: transparent;
+
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-play-state: play-state;
+    animation-play-state: running;
+}
+
+@keyframes move {
+    0% {
+      transform: rotate(20deg);
+    }
+  
+    90% {
+      transform: rotate(40deg);
+    }
+  }
+
+#student {
+    position: fixed;
+    left: 50%;
+    top: 57.5%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff00;
+
+}
