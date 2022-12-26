@@ -5,7 +5,7 @@ var showed = 0;
 var speed = 150;
 
 function wait() {
-    setTimeout(greeting, 1500);
+    setTimeout(greeting, 1500);   
 }
 
 function greeting() {
@@ -21,5 +21,11 @@ function student() {
     if (showed == 0) {
         showed = 1;
         document.getElementById("student").innerHTML += cps;
+    
+    setTimeout(header, speed);
     }
+}
+
+function header() {
+    document.getElementById("header").style.opacity = "1";
 }

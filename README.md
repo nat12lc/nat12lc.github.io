@@ -1,1 +1,1 @@
-# https://nat12lc.github.io/
+# nat12lc.github.io
