@@ -5,7 +5,19 @@ var showed = 0;
 var speed = 150;
 
 function wait() {
+    setTimeout(() => {
+        document.getElementById("introduction").style.backgroundImage = 'linear-gradient(90deg, red, green, blue)';
+        document.getElementById("introduction").style.backgroundSize = '50% auto';
+    }, "3000")
     setTimeout(greeting, 1500);   
+
+    setTimeout(() => {
+        document.getElementById("introduction").style.backgroundImage = 'linear-gradient(90deg, red, blue)';
+    }, "4500")
+
+    setTimeout(() => {
+        document.getElementById("introduction").style.backgroundSize = '100% auto';
+    }, "6500")
 }
 
 function greeting() {

@@ -20,61 +20,54 @@ h1 {font-size: 128px !important; text-align: center; font-weight: 800 !important
 
 h2 {font-size: 55px !important; text-align: right; font-weight: 600 !important;}
 
-div {
+.position {
     position: fixed;
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
 }
 
-#introduction {
-    /* background-image: linear-gradient(90deg, red, green, blue);
-    background-clip: text; 
-    background-size: 50% auto;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: move 1s linear infinite; */
-    background-image: linear-gradient(90deg, #1A2666, #BF0413);
-    
-    background-clip: text; 
-    -webkit-background-clip: text;
-    color: transparent;
-
-    animation: move 3s 1 ease;
+.spin { 
+    animation: spin 3s 1 ease;
     animation-delay: 2s;
 }
 
-/* @keyframes move {
-    to {
-        background-position: 100% center;
-    }
-} */
-
-@keyframes move {
+@keyframes spin {
     0% {
-        background-image: linear-gradient(90deg, green, #1A2666, #BF0413);
         transform: translateX(0%);
     }
 
     10% {
-        background-image: linear-gradient(90deg, #1A2666, green, #BF0413);
         transform: translateX(75%) translateY(90%) rotate(40deg) scale(0.25);
     }
 
     50% {
-        background-image: linear-gradient(90deg, #1A2666, #BF0413, green);
         transform: rotate(360deg) translateY(-90%) translateX(-50%) scale(0.1);
     }
-
 }
 
+#introduction {
+    background-image: linear-gradient(90deg, red, blue);
+    background-clip: text; 
+    background-size: 100% auto;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradient 1s linear 5;
+    animation-delay: 2s;
+}
+
+@keyframes gradient {
+    to {
+        background-position: 100% center;
+    }
+}
 
 #student {
-		position: fixed;
-		left: 50%;
-		top: 57.5%;
-		transform: translate(-50%, -50%);
-		background-color: #ffffff00;
+    position: fixed;
+    left: 50%;
+    top: 57.5%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff00;
 }
 
 ul {
