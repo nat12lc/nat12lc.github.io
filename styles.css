@@ -28,59 +28,45 @@ div {
 }
 
 #introduction {
-		background-image: linear-gradient(90deg, #1A2666, #BF0413);
-		background-clip: text; 
-		-webkit-background-clip: text;
-		color: transparent;
+    /* background-image: linear-gradient(90deg, red, green, blue);
+    background-clip: text; 
+    background-size: 50% auto;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: move 1s linear infinite; */
+    background-image: linear-gradient(90deg, #1A2666, #BF0413);
+    
+    background-clip: text; 
+    -webkit-background-clip: text;
+    color: transparent;
 
     animation: move 3s 1 ease;
     animation-delay: 2s;
 }
 
 /* @keyframes move {
-  from {transform: translateX(75%) rotate(0deg);}
-  to {transform: translateX(0) rotate(360deg);}
+    to {
+        background-position: 100% center;
+    }
 } */
 
 @keyframes move {
     0% {
+        background-image: linear-gradient(90deg, green, #1A2666, #BF0413);
         transform: translateX(0%);
     }
 
     10% {
+        background-image: linear-gradient(90deg, #1A2666, green, #BF0413);
         transform: translateX(75%) translateY(90%) rotate(40deg) scale(0.25);
     }
 
     50% {
-        transform: rotate(360deg) translateY(-90%) translateX(-50%)  scale(0.1);
+        background-image: linear-gradient(90deg, #1A2666, #BF0413, green);
+        transform: rotate(360deg) translateY(-90%) translateX(-50%) scale(0.1);
     }
+
 }
-
- /* @keyframes move {
-		10% {
-				transform: scale(0.5) rotate(40deg);
-		}
-
-		30% {
-				transform: scale(0.75) rotate(-40deg);
-		}
-
-		50% {
-				transform: scale(0.25) rotate(40deg);
-		}
-
-		80% {
-				transform: rotate(-60deg) scale(0.4);
-		}
-
-		90% {
-				transform: rotate(-40deg) translate(-100%, 0%) scale(0.2);
-		}
-
-		95% {
-				transform: rotate(360deg);
-		}
-}  */
 
 
 #student {
@@ -116,5 +102,6 @@ li a:hover {
 }
 
 @keyframes head {
-    to {opacity: 1;}
+    from {transform: translateY(-50%);}
+    to {transform: translateY(0); opacity: 1;}
 }
