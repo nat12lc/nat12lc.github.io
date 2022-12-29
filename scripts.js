@@ -39,5 +39,5 @@ function student() {
 }
 
 function header() {
-    document.getElementById("header").style.opacity = "1";
+    document.getElementById("dropDown").style.opacity = "1";
 }
